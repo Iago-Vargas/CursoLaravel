@@ -1,19 +1,16 @@
 <script setup lang="ts">
-  const eventEmitted = () => {
-    console.log('event Emitted')
-  };
+  import RegisterFormC from './components/auth/registerFormC.vue';
+  import loginFormC from './components/auth/loginFormC.vue';
 </script>
 
 <template>
   <div>
-    <h1>App Component</h1>
-
-    <testC @eventEmit="eventEmitted" :name=" 'Iago Vargas' "/>
+    <loginFormC/>
   </div>
 </template>
 
-<style scoped>
-  h1{
-    color: green;
-  }
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>
